@@ -1,0 +1,65 @@
+Task: Extract relationships from a given sentence based on relationships defined in **Wikidata**. You can learn how to do from the <Examples>.
+
+Question and answer template:
+    Question [id] sentence: <sentence that require extraction of the relationships>
+    Question [id]: Based on <Relationships>, what is the target relationship of <Question [id] sentence>?
+    Answer [id]: [relationships of the <Question id sentence> which is in the <Relationships>]
+
+Examples:
+Question 0 sentence: To whom does the head of state role of the country where the child of Adrian Vaughn holds citizenship belong?
+Question 0: Based on the relationships defined in **Wikidata**, what is the target relationship of <Question 0 sentence> ?
+Answer 0: { "child", "country of citizenship", "head of state"}
+
+Question 1 sentence: What is the name of the topmost official of the country where Jason Everett's music genre was born?
+Question 1: Based on the relationships defined in **Wikidata**, what is the target relationship of <Question 1 sentence> ?
+Answer 1: { "genre", "country of origin", "head of state"}
+
+Question 2 sentence: Who is the chief executive of the city where the creators of "Legends of Eldoria" originated from?
+Question 2: Based on the relationships defined in **Wikidata**, what is the target relationship of <Question 2 sentence> ?
+Answer 2: { "developer", "location of formation", "head of government"}
+
+Question 3 sentence: Who is the head of government of the location where the manufacturer of Falcon X-12 was formed?
+Question 3: Based on the relationships defined in **Wikidata**, what is the target relationship of <Question 3 sentence> ?
+Answer 3: { "manufacturer", "location of formation", "head of government"}
+
+Question 4 sentence: Who is the head of government in the location where the headquarters of Ethan Caldwell's educational institution is based?
+Question 4: Based on the relationships defined in **Wikidata**, what is the target relationship of <Question 4 sentence> ?
+Answer 4: { "educated at", "headquarters location", "head of government"}
+
+Question 5 sentence: What is the occupation of the chairperson of the Unity Progress Party?
+Question 5: Based on the relationships defined in **Wikidata**, what is the target relationship of <Question 5 sentence> ?
+Answer 5: { "chairperson", "occupation"}
+
+Question 6 sentence: What is the birthplace of the chairperson of the Unity Progressive Alliance?
+Question 6: Based on the relationships defined in **Wikidata**, what is the target relationship of <Question 6 sentence> ?
+Answer 6: { "chairperson", "place of birth"}
+
+Question 7 sentence: Where is the educational institution located where the President of Veridora studied?
+Question 7: Based on the relationships defined in **Wikidata**, what is the target relationship of <Question 7 sentence> ?
+Answer 7: { "officeholder", "educated at", "headquarters location"}
+
+Question 8 sentence: Who founded the religion associated with Damien Holt's occupation?
+Question 8: Based on the relationships defined in **Wikidata**, what is the target relationship of <Question 8 sentence> ?
+Answer 8: { "occupation", "religion or worldview", "founded by"}
+
+Question 9 sentence: Which continent does the country where Brandon Caldwell's sport originated belong to?
+Question 9: Based on the relationships defined in **Wikidata**, what is the target relationship of <Question 9 sentence> ?
+Answer 9: { "position played on team / speciality", "sport", "country of origin", "continent"}
+
+Question 10 sentence: What is the capital of the country to which the director/manager of "Echoes of Tomorrow" belongs?
+Question 10: Based on the relationships defined in **Wikidata**, what is the target relationship of <Question 10 sentence> ?
+Answer 10: { "performer", "director / manager", "country of citizenship", "capital"}
+
+Question 11 sentence: What is the capital city of the country that Marco Varela's sport originates from?
+Question 11: Based on the relationships defined in **Wikidata**, what is the target relationship of <Question 11 sentence> ?
+Answer 11:  { "position played on team / speciality", "sport", "country of origin", "capital"}
+
+Question 12 sentence: What language is the notable work associated with the organization "Path of Enlightenment" written in?
+Question 12: Based on the relationships defined in **Wikidata**, what is the target relationship of <Question 12 sentence> ?
+Answer 12: { "founded by", "notable work", "country of origin", "language of work or name"}
+
+Question 13 sentence: What languages are spoken, written or signed by the partner of the performer of "Rhythms of Stardust"?
+Question 13: Based on the relationships defined in **Wikidata**, what is the target relationship of <Question 13 sentence> ?
+Answer 13: { "languages spoken, written or signed", "spouse", "performer"}
+
+Now is start, please answer the question as the examples and do not output any extra information.

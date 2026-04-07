@@ -1,0 +1,49 @@
+Task: Choose the reasoning path that best answers the question based on the edit info.
+
+Selection rules:
+1. Prefer the path that uses the most facts from the edit info.
+2. If none match edit info, pick the one with the most recent fact.
+3. If still unsure, choose the clearest or most relevant.
+
+Priority: match edit info > recency > others.
+
+Examples:
+Question_3: Who is the head of state of the country to which Michael Jordan belongs?
+Question_3 edit info:
+(1) Michael Jordan -> country of citizenship -> United Kingdom
+(2) United Kingdom -> head of state -> Ed Sheeran
+Question_3 candidate reasoning path:
+(1) Michael Jordan -> country of citizenship -> United Kingdom; United Kingdom -> head of state -> Ed Sheeran [match edit info: (1)(2)]
+(2) Michael Jordan -> country of citizenship -> United Kingdom; United Kingdom -> head of state -> George V [match edit info: (1)]
+(3) Michael Jordan -> country of citizenship -> United Kingdom; United Kingdom -> head of state -> Elizabeth II [match edit info: (1)]
+please select one reasoning path from Question_3 candidate reasoning path to answer Question_3.
+Question_3 answer:
+So the final answer is {Michael Jordan -> country of citizenship -> United Kingdom; United Kingdom -> head of state -> Ed Sheeran}
+End of answer.
+
+Question_18: What is the capital city of the country where Leonardo DiCaprio holds citizenship?
+Question_18 edit info:
+(1) Leonardo DiCaprio -> country of citizenship -> Atlantis
+(2) Atlantis -> capital -> Oceanus
+Question_18 candidate reasoning path:
+(1) Leonardo DiCaprio -> country of citizenship -> Atlantis; Atlantis -> capital -> Poseidonia  [match edit info: (1)]
+(2) Leonardo DiCaprio -> country of citizenship -> United States; United States -> capital -> Washington, D.C.  [match edit info: None]
+(3) Leonardo DiCaprio -> country of citizenship -> Atlantis; Atlantis -> capital -> Oceanus  [match edit info: (1)(2)]
+please select one reasoning path from Question_18 candidate reasoning path to answer Question_18.
+Question_18 answer:
+So the final answer is {Leonardo DiCaprio -> country of citizenship -> Atlantis; Atlantis -> capital -> Oceanus}
+End of answer
+
+Question_105: Who is the head of state of the country where Taylor Swift is a citizen?
+Question_105 edit info:
+(1) United States of America -> head of state -> Alice Monroe
+Question_105 candidate reasoning path:
+(1) Taylor Swift -> country of citizenship -> United States of America; United States of America -> head of state -> Abraham Lincoln [match edit info: None]
+(2) Taylor Swift -> country of citizenship -> United States of America; United States of America -> head of state -> Alice Monroe [match edit info: (1)]
+(3) Taylor Swift -> country of citizenship -> United States of America; United States of America -> head of state -> George Washington [match edit info: None]
+please select one reasoning path from Question_105 candidate reasoning path to answer Question_105.
+Question_105 answer:
+So the final answer is {Taylor Swift -> country of citizenship -> United States of America; United States of America -> head of state -> Alice Monroe}
+End of answer.
+
+Now is start, please answer the question as the examples and do not output any extra information.

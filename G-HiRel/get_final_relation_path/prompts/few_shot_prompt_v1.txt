@@ -1,0 +1,94 @@
+Task: Based on the provided information, from the corresponding information in the question,
+select a relational reasoning path which is most likely to answer the question.
+You can learn how to do this from the examples I've provided.
+
+Examples:
+Question_3: Which writer's country of citizenship is the same as the author of "Harry Potter"?
+Question_3 Information:
+(1) Harry Potter -> author -> place of birth
+(2) Harry Potter -> author -> country of citizenship
+(3) Harry Potter -> author -> notable work
+Question_3 relation reasoning path: Harry Potter -> author -> country of citizenship
+End of answer.
+
+Question_27: Who founded the group or organization associated with the Civil Rights Movement's religion?
+Question_27 Information:
+(1) Civil Rights Movement -> religion or worldview -> founded by -> spouse -> child
+(2) Civil Rights Movement -> country -> member of -> chairperson -> occupation
+(3) Civil Rights Movement -> country -> member of -> chairperson -> religion or worldview
+Question_27 relation reasoning path: Civil Rights Movement -> religion or worldview -> founded by -> spouse -> child
+End of answer.
+
+Question_89: What sport was John associated with during his career?
+Question_89 Information:
+(1) John -> place of birth -> country
+(3) John -> position played on team / speciality -> sport
+(2) John -> place of birth -> located in the administrative territorial entity
+Question_89 relation reasoning path: John -> position played on team / speciality -> sport
+End of answer.
+
+Question_195: Which languages does the creator of John Smith have proficiency in speaking, writing, or signing?
+Question_195 Information:
+(1) John Smith -> creator -> educated at
+(2) John Smith -> creator -> languages spoken, written or signed
+(3) John Smith -> creator -> country of citizenship
+Question_195 relation reasoning path: John Smith -> creator -> languages spoken, written or signed
+End of answer.
+
+Question_219: Who is the head of state of the country where Emily Carter is a citizen?
+Question_219 Information:
+(1) Emily Carter -> country of citizenship -> head of government
+(2) Emily Carter -> country of citizenship -> capital
+(3) Emily Carter -> country of citizenship -> head of state
+Question_219 relation reasoning path: Emily Carter -> country of citizenship -> head of state
+End of answer.
+
+Question_267: Who was the head of government in the country where Michael was a citizen of?
+Question_267 Information:
+(1) Michael -> country of citizenship -> head of government
+(2) Michael -> country of citizenship -> head of state
+(3) Michael -> country of citizenship -> office held by head of government
+Question_267 relation reasoning path: Michael -> country of citizenship -> head of government
+End of answer.
+
+Question_350: Who is the head of state of the country where Elizabeth holds citizenship?
+Question_350 Information:
+(1) Elizabeth -> place of birth -> head of government
+(2) Elizabeth -> country of citizenship -> head of state
+(3) Elizabeth -> country of citizenship -> head of government
+Question_350 relation reasoning path: Elizabeth -> country of citizenship -> head of state
+End of answer.
+
+Question_2127: What is the official language of the country where "Inception" was produced?
+Question_2127 Information:
+(1) Inception -> country of origin -> official language
+(2) Inception -> original language of film or TV show -> country
+(3) Inception -> country of origin -> head of state
+Question_2127 relation reasoning path: Inception -> country of origin -> official language
+End of answer.
+
+Question_303: Which country is Apple Inc. originally from?
+Question_303 Information:
+(1) Apple Inc. -> sport -> country of origin -> country
+(2) Apple Inc. -> sport -> country of origin -> continent
+(3) Apple Inc. -> country -> member of -> location
+Question_303 relation reasoning path: Apple Inc. -> sport -> country of origin -> country
+End of answer.
+
+Question_3646: What continent is the country where the 2016 Summer Olympics originated located in?
+Question_3646 Information:
+(1) 2016 Summer Olympics -> location -> country -> continent
+(2) 2016 Summer Olympics -> sport -> country of origin -> country
+(3) 2016 Summer Olympics -> sport -> country of origin -> continent
+Question_3646 relation reasoning path: 2016 Summer Olympics -> sport -> country of origin -> continent
+End of answer.
+
+Question_3968: Who is the head of government in the location of the headquarters of Media Haven?
+Question_3968 Information:
+(1) Media Haven -> owned by -> headquarters location
+(2) Media Haven -> headquarters location -> office held by head of government
+(3) Media Haven -> headquarters location -> head of government
+Question_3968 relation reasoning path: Media Haven -> headquarters location -> head of government
+End of answer.
+
+Now is start, please answer the question as the examples and do not output any extra information.

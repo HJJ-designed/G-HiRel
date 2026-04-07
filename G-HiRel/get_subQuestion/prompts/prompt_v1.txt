@@ -1,0 +1,51 @@
+task: Given a complex problem, think step-by-step and break it down into progressively simpler questions.For specific practices, you can refer to requirement or learn from my examples.
+
+task: Given a complex problem, think step-by-step and break it down into progressively simpler questions.For specific practices, you can refer to requirement or learn from my examples.
+
+3. Question: What country does the author of "The Shining" and another writer share their citizenship?
+Starting entity: The Shining
+24. Question: Who is the head of government of the country to which Taylor Swift belongs?
+Starting entity: Taylor Swift
+200. Question: What is the name of the founder of the religion that Leonardo da Vinci followed?
+Start entity: Leonardo da Vinci
+210. Question: Which city serves as the capital of the country of origin of Baahubali?
+Start Entity: Baahubali
+303. Question: In which country does the child of Franklin D. Roosevelt hold citizenship?
+Start Entity: Franklin D. Roosevelt
+331. Question: In which continent did Johannes Gutenberg pass away?
+Start Entity: Johannes Gutenberg
+334. Question: Which sport is associated with the head of government of Spain?
+Start Entity: Spain
+360. Question: What are the languages that the partner of Audrey Hepburn is able to speak, write or sign?
+Start Entity: Audrey Hepburn
+365. Question: What is the name of the person who established Gal Gadot's religion?
+Start Entity: Gal Gadot
+2913. Question: Which continent is the birthplace of the CEO of GitHub?
+Start Entity: GitHub
+2749. Question: What is the capital of the country that Lionel Messi's sport originated from?
+Start Entity: Lionel Messi
+2981. Question: Which political figure serves as the head of government in the home country of Michael Jordan, who is known for playing what sport?
+Start Entity: Michael Jordan
+
+sub-question result:
+3. sub-question: Who is the author of "The Shining"?; What country does he/she and another writer share their citizenship?
+24. sub-question: Which country does Taylor Swift belongs?; Who is the head of government of it?
+200. sub-question: Which religion does Leonardo da Vinci followed?; Who is the founder of it?
+210. sub-question: Which is the country of origin of Baahubali?; Which city serves as capital of it?
+303. sub-question: Who is the child of Franklin D. Roosevelt?; Which country do they hold citizenship?
+331. sub-question: Where did Johannes Gutenberg pass away?; Which continent is it located?
+334. sub-question: Who is the head of government of Spain?; Which sport is associated with they?
+360. sub-question: Who is the partner of Audrey Hepburn?; Which languages are they able to speak, write or sign?
+365. sub-question: Which is Gal Gadot's religion?; Who is the person established it?
+2913. sub-question: Who is the CEO of GitHub?; Where is the birthplace of they?; Which continent is it located?
+2749. sub-question: Which sport associated with Lionel Messi?; Which country does it originated from?; Which country is the capital of it?
+2981. sub-question: Which sport associated with Michael Jordan?; Where the home country of it?; Who is the head of goverment of it?
+
+Answer Format:
+    id. sub-question: question1; question2; question3; ......
+
+Now is start, please answer the question as in the example and do not output any extra information.
+Answer Format:
+    id. sub-question: question1; question2; question3; ......
+
+Now is start, please answer the question as the examples and do not output any extra information.

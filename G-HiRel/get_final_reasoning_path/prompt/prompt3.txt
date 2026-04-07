@@ -1,0 +1,59 @@
+Task:  Based on the provided information, select a reasoning path to answers the question based on edit information.
+You can learn how to do this from the examples provided.
+
+**Important**:
+- You must compare ALL candidate reasoning paths before selecting the final answer.
+- If any reasoning step matches exactly with the edit information (full triple: head -> relation -> tail), you must prioritize it.
+- If no step matches edit information, you must select the reasoning path with the latest time (the latest).
+- You must NOT stop at the first reasonable option; you must check all options completely.
+
+Examples:
+Question_3: Who is the head of state of the country to which Michael Jordan belongs?
+Question_3 edit information:
+(1) Michael Jordan -> country of citizenship -> United Kingdom
+(2) United Kingdom -> head of state -> Ed Sheeran
+Question_3 candidate reasoning path:
+(1) Michael Jordan -> country of citizenship -> United Kingdom; United Kingdom -> head of state -> Ed Sheeran
+(2) Michael Jordan -> country of citizenship -> United Kingdom; United Kingdom -> head of state -> George V
+(3) Michael Jordan -> country of citizenship -> United Kingdom; United Kingdom -> head of state -> Elizabeth II
+please select one reasoning path from Question_3 candidate reasoning path to answer Question_3.
+Question_3 answer:
+(1) United Kingdom -> head of state -> Ed Sheeran(appear in Question_3 edit information)
+(2) United Kingdom -> head of state -> George V(not appear in Question_3 edit information, 1910-1936)
+(3) United Kingdom -> head of state -> Elizabeth II(not appear in Question_3 edit information, 1956-2022, the latest)
+So the final answer is {Michael Jordan -> country of citizenship -> United Kingdom; United Kingdom -> head of state -> Ed Sheeran}
+End of answer.
+
+Question_16: Who is the head of government of the country of the author of "Harry Potter"?
+Question_16 edit information:
+(1) Harry Potter -> author -> Rick Riordan
+(2) Rick Riordan -> country of citizenship -> Germany
+Question_16 candidate reasoning path:
+(1) Harry Potter -> author -> Rick Riordan; Rick Riordan -> country of citizenship -> Germany; Germany -> head of government -> Helmut Kohl
+(2) Harry Potter -> author -> Rick Riordan; Rick Riordan -> country of citizenship -> Germany; Germany -> head of government -> Olaf Scholz
+(3) Harry Potter -> author -> Rick Riordan; Rick Riordan -> country of citizenship -> Germany; Germany -> head of government -> Angela Merkel
+please select one reasoning path from Question_16 candidate reasoning path to answer Question_16.
+Question_16 answer:
+(1) UGermany -> head of government -> Helmut Kohl(not appear in Question_16 edit information, 1982-1998)
+(2) Germany -> head of government -> Olaf Scholz(not appear in Question_16 edit information, 2021–now, the latest)
+(3) Germany -> head of government -> Angela Merkel(not appear in Question_16 edit information, 2005-2021)
+So the final answer is {Harry Potter -> author -> Rick Riordan; Rick Riordan -> country of citizenship -> Germany; Germany -> head of government -> Olaf Scholz}
+End of answer.
+
+Question_99: Where is the birth place of the head of state of United Kingdom?
+Question_99 edit information:
+(1) United Kingdom -> head of state -> Joe Biden
+(2) Rick Riordan -> country of citizenship -> Germany
+Question_99 candidate reasoning path:
+(1) United Kingdom -> head of state -> George VI; George VI -> place of birth -> York Cottage
+(2) United Kingdom -> head of state -> Joe Biden; Joe Biden -> place of birth -> Scranton
+(3) United Kingdom -> head of state -> Elizabeth II; Elizabeth II -> place of birth -> 17 Bruton Street
+please select one reasoning path from Question_99 candidate reasoning path to answer Question_99.
+Question_99 answer:
+(1) United Kingdom -> head of state -> George VI(not appear in Question_99 edit information, 1936-1952)
+(2) United Kingdom -> head of state -> Joe Biden(appear in Question_99 edit information)
+(3) United Kingdom -> head of state -> Elizabeth II(not appear in Question_99 edit information, 1952-2022, the latest)
+So the final answer is {United Kingdom -> head of state -> Joe Biden; Joe Biden -> place of birth -> Scranton}
+End of answer.
+
+Now is start, please answer the question as the examples and do not output any extra information.

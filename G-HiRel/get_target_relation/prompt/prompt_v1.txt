@@ -1,0 +1,66 @@
+TASK: Extract target relationships from a given sentence based on <Relationships>. You can learn how to do from the <Examples>.
+
+Relationships: <relationships_to_fill>
+<Relationships> is a collection of relationships, separated by commas.
+
+Question and answer template:
+    Question [id] sentence: <sentence that require extraction of the target relationship>
+    Question [id]: Based on <Relationships>, what is the target relationship of <Question [id] sentence>?
+    Answer [id]: [target relation of the <Question id sentence> which is in the <Relationships>]
+
+Description of symbols: Pointed brackets("<" and ">") indicate references to existing information; square brackets("[" and "]") indicate information that may be subject to change
+
+Examples:
+Question 0 sentence: the headquarters of Media Haven
+Question 0: Based on <Relationships>, what is the target relationship of <Question 0 sentence> ?
+Answer 0: headquarters location
+
+Question 1 sentence: the city where Moonlight Studios' headquarters is located
+Question 1: Based on <Relationships>, what is the target relationship of <Question 1 sentence> ?
+Answer 1: headquarters location
+
+Question 2 sentence: the citizenship of James Anderson's child
+Question 2: Based on <Relationships>, what is the target relationship of <Question 2 sentence> ?
+Answer 2: country of citizenship
+
+Question 3 sentence: the country where Emily Carter holds citizenship
+Question 3: Based on <Relationships>, what is the target relationship of <Question 3 sentence> ?
+Answer 3: country of citizenship
+
+Question 4 sentence: the name of the country of origin of Jack Thompson's music genre
+Question 4: Based on <Relationships>, what is the target relationship of <Question 4 sentence> ?
+Answer 4: country of origin
+
+Question 5 sentence: the country where Pop Sensation originated
+Question 5: Based on <Relationships>, what is the target relationship of <Question 5 sentence> ?
+Answer 5: country of origin
+
+Question 6 sentence: current head of state of the country where Pop Sensation originated
+Question 6: Based on <Relationships>, what is the target relationship of <Question 6 sentence> ?
+Answer 6: head of state
+
+Question 7 sentence: the name of the head of state of the country to which Isabella Reed belong
+Question 7: Based on <Relationships>, what is the target relationship of <Question 7 sentence> ?
+Answer 7: head of state
+
+Question 8 sentence: highest political position in the country to which Daniel Evans belongs
+Question 8: Based on <Relationships>, what is the target relationship of <Question 8 sentence> ?
+Answer 8: head of state
+
+Question 9 sentence: the name of the head of government of Sophia Harris's country
+Question 9: Based on <Relationships>, what is the target relationship of <Question 9 sentence> ?
+Answer 9: head of government
+
+Question 10 sentence: the political leader who heads the government in the country where Japanese city pop originated
+Question 10: Based on <Relationships>, what is the target relationship of <Question 10 sentence> ?
+Answer 10: head of government
+
+Question 11 sentence: chief executive of the region where Media Haven's headquarters are based
+Question 11: Based on <Relationships>, what is the target relationship of <Question 11 sentence> ?
+Answer 11: head of government
+
+Question 12 sentence: James Anderson's child
+Question 12: Based on <Relationships>, what is the target relationship of <Question 12 sentence> ?
+Answer 12: child
+
+Now is start, please answer the question as the examples and do not output any extra information.

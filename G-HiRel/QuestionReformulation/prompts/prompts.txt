@@ -1,0 +1,50 @@
+Task: The given text is a complex problem. It is necessary to reconstruct the text layer by layer based on the corresponding Start Entity after understanding the problem text, ensuring that each sub-text is semantically unique, concise, and non-repetitive. For specific practices, you can refer to requirement or learn from my examples.
+
+Requirement:
+1. The number of sub-texts in Split is greater than or equal to 1
+2. The text in Split must be completely derived from the corresponding Text
+3. The sub-text of the next level must contain the complete text of the sub-text of the previous level
+4. Start Entity cannot appear as a separate subtext
+
+Examples:
+3.Text: Which writer's country of citizenship is the same as the author of "The Shining"?
+Starting entity: The Shining
+24.Text: Who is the head of government of the country to which Elon Musk belongs?
+Start entity: Elon Musk
+200.Text: What is the name of the founder of the religion that Queen Elizabeth I of England followed?
+Start entity: Queen Elizabeth I of England
+210.Text: Which city serves as the capital of the country of origin of Zephyria?
+Start Entity: Zephyria
+303.Text: In which country does the child of Nelson Mandela hold citizenship?
+Start Entity: Nelson Mandela
+331.Text: In which continent did Johannes Gutenberg pass away?
+Start Entity: Johannes Gutenberg
+334.Text: Which sport is associated with the head of government of Eldoria?
+Start Entity: Eldoria
+360.Text: What are the languages that the partner of Leonardo da Vinci is able to speak, write or sign?
+Start Entity: Leonardo da Vinci
+365.Text: What is the name of the person who established Dwayne Johnson's religion?
+Start Entity: Dwayne Johnson
+2913.Text: Which continent is the birthplace of the CEO of GitHub?
+Start Entity: GitHub
+2749.Text: What is the capital of the country that Lionel Messi's sport originated from?
+Start Entity: Lionel Messi
+2981.Text: Which political figure serves as the head of government in the home country of Cristiano Ronaldo, who is known for playing what sport?
+Start Entity: Cristiano Ronaldo
+
+Final Answer:
+3. Split: the author of "The Shining";writer's country of citizenship is the same as the author of "The Shining"
+24. Split: the country to which Elon Musk belongs;the head of government of the country to which Elon Musk belongs
+200. Split: the religion that Queen Elizabeth I of England followed;the founder of the religion that Queen Elizabeth I of England followed
+210. Split: the country of origin of Zephyria;city serves as the capital of the country of origin of Zephyria
+303. Split: the child of Nelson Mandela; country does the child of Nelson Mandela hold citizenship
+331. Split: Johannes Gutenberg pass away; continent did Johannes Gutenberg pass away
+334. Split: the head of government of Eldoria; sport is associated with the head of government of Eldoria
+360. Split: the partner of Leonardo da Vinci; the languages that the partner of Leonardo da Vinci is able to speak, write or sign
+365. Split: Dwayne Johnson's religion; the name of the person who established Dwayne Johnson's religion
+2913. Split: CEO of GitHub; the birthplace of the CEO of GitHub;continent is the birthplace of the CEO of GitHub
+2749. Split: Lionel Messi's sport; the country that Lionel Messi's sport originated from; the capital of the country that Lionel Messi's sport originated from
+2981. Split: Cristiano Ronaldo, who is known for playing what sport; the home country of Cristiano Ronaldo, who is known for playing what sport; political figure serves as the head of government in the home country of Cristiano Ronaldo, who is known for playing what sport
+end of answer
+
+Now is start, please answer the question as the examples and do not output any extra information.

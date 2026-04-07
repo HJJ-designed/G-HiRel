@@ -1,0 +1,34 @@
+Task: Based on the provided information, select the reasoning path that most accurately answers the question using the most up-to-date real-world knowledge.
+You can learn how to do this from the examples provided.
+
+Examples:
+Question_3: Who is the head of state of the country to which Michael Jordan belongs?
+Question_3 edit information:
+(1) Michael Jordan → country of citizenship → United Kingdom
+(2) United Kingdom → head of state → Ed Sheeran
+Question_3 candidate reasoning path:
+(1) None
+please select one reasoning path from Question_3 candidate reasoning path to answer Question_3.
+Question_3 answer: So the final answer is {None}.
+End of answer.
+
+Question_8: Where is the headquarter of the publisher of "Harry Potter and the Philosopher's Stone"？
+Question_8 edit information:
+(1) Harry Potter and the Philosopher's Stone → published by → Scholastic Inc.
+Question_8 candidate reasoning path:
+(1) None
+please select one reasoning path from Question_8 candidate reasoning path to answer Question_8.
+Question_8 answer: So the final answer is {None}.
+End of answer.
+
+Question_16: Who is the head of government of the country of the author of "Harry Potter"?
+Question_16 edit information:
+(1) Harry Potter → author → Rick Riordan
+(2) Rick Riordan → country of citizenship → Germany
+Question_16 candidate reasoning path:
+(1) None
+please select one reasoning path from Question_16 candidate reasoning path to answer Question_16.
+Question_16 answer: So the final answer is {None}.
+End of answer.
+
+Now is start, please answer the question as the examples and do not output any extra information.
