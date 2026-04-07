@@ -1,41 +1,21 @@
-# G-HiRel Project
+## G-HiRel
 
-## Overview
-This project, G-HiRel, is focused on developing high-rel performance models and tools.
+Our method's source code and related README files are located in the `G-HiRel' directory.
 
-## Installation
-Instructions on how to install the project:
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/HJJ-designed/G-HiRel.git
-   ```
-2. Navigate into the project directory:
-   ```bash
-   cd G-HiRel
-   ```
-3. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
 
-## Usage
-Instructions on how to use the project:
-```bash
-python main.py
-```
 
-## Contributing
-We welcome contributions to this project. Please fork the repository and submit a pull request with your changes.
+## Other Methods
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+We reimplemented other methods using the official code as a base. The link to the official code is as follows:
 
-## Contact
-For questions, please contact the author at [your-email@example.com].
+Mello：https://github.com/princeton-nlp/MQuAKE
 
-## Acknowledgments
-Acknowledgment of resources and contributors goes here.
+PokeMQA：https://github.com/Hengrui-Gu/PokeMQA
 
----
+ToG：https://github.com/IDEA-FinAI/ToG
 
-_Last updated: 2026-04-07 10:47:42 UTC_
+AlphaEdit：https://github.com/jianghoucheng/AlphaEdit
+
+## KG
+
+In the experiment need to use the code in `G-HiRel/KG` to extract relation information from the Wikidata JSON file, build the foundational knowledge graph (KG), and identify the starting entity for each question in the MQuAKE dataset. The KG data come form Wikidata (https://www.wikidata.org/wiki/Wikidata:Database_download).
